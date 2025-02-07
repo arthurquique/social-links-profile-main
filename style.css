@@ -1,3 +1,12 @@
+:root{
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-600: hsl(0, 0%, 30%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
 @font-face {
   font-family: 'Inter';
   src: url(assets/fonts/static/Inter-Bold.ttf);
@@ -16,11 +25,11 @@
   font-weight: medium;  
 }
 
-.attribution { font-size: 11px; text-align: center; color: whitesmoke;}
-.attribution a { color: hsl(75, 94%, 57%); }
+.attribution { font-size: 11px; text-align: center; color: var(--White);}
+.attribution a { color:var(--Green); }
 
 body {
-  background-color: hsl(0, 0%, 8%);
+  background-color: var(--Grey-900);
   font-family: 'Inter';
   font-size: 14px;
 }
@@ -33,7 +42,7 @@ body {
 }
 
 .card {
-  background-color: hsl(0, 0%, 12%);
+  background-color: var(--Grey-800);
   border-radius: 10px;
   display: grid;
   padding: 40px;
@@ -49,17 +58,17 @@ body {
 }
 
 .name {
-  color: hsl(0, 0%, 100%);
+  color: var(--White);
   font-weight: medium;
 }
 
 .location {
-  color: hsl(75, 94%, 57%);
+  color: var(--Green);
   font-weight: bold;
 }
 
 .bio {
-  color: hsl(0, 0%, 100%);
+  color: var(--White);
   font-weight: normal;
   padding: 20px;
   text-align: center;
@@ -72,7 +81,7 @@ body {
 }
 
 .social-link {
-  background-color: hsl(0, 0%, 20%);
+  background-color: var(--Grey-700);
   color:hsl(0, 0%, 100%);
   font-weight: bold;
   text-decoration: none;
@@ -82,5 +91,5 @@ body {
 }
 
 .social-link:hover {
-  background-color: hsl(0, 0%, 30%);
+  background-color: var(--Grey-600);
 }
